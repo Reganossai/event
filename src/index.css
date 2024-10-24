@@ -1,13 +1,167 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  width: 100%;
+}
+
+
+nav {
+  display: flex;
+  background-color: lightgoldenrodyellow;
+
+}
+
+.logo {
+  margin: 5px 350px 5px 150px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  list-style-type: none;
+  margin: 10px 0px 0px 100px;
+
+
+}
+
+#navbarSupportedContent li {
+  margin: 0px 20px 0px 20px;
+  padding: 5px;
+}
+
+#navbarSupportedContent li a {
+  text-decoration: none;
+  color: black;
+  font-family: cursive;
+  font-weight: 600;
+  padding: 0px 0px 5px 0px;
+}
+
+.zaracho {
+  display: none;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.flex-div{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+
+/* Styles for tablet devices */
+@media (max-width: 1100px) {
+
+  /* NAVBAR */
+  .zaracho {
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+    z-index: 999;
+    margin: 10px 0px 0px 220px;
+    color: black;
+  }
+
+  #navbarSupportedContent {
+    display: none;
+  }
+
+  #navbarSupportedContentMobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgoldenrodyellow;
+  }
+
+  #navbarSupportedContentMobile li {
+    list-style-type: none;
+    margin: 6px 0px 6px 0px;
+  }
+
+  #navbarSupportedContentMobile li a {
+    text-decoration: none;
+    color: red;
+  }
+
+  .logo {
+    margin: 5px 0px 5px 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* NAVBAR */
+  .zaracho {
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+    z-index: 999;
+    margin: 10px 0px 0px 220px;
+    color: black;
+  }
+
+  #navbarSupportedContent {
+    display: none;
+  }
+
+  #navbarSupportedContentMobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgoldenrodyellow;
+  }
+
+  #navbarSupportedContentMobile li {
+    list-style-type: none;
+    margin: 26px 0px 6px 0px;
+  }
+
+  #navbarSupportedContentMobile li a {
+    text-decoration: none;
+    color:  red;
+  }
+
+  .logo {
+    margin: 5px 0px 5px 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+  }
+
+  nav {
+    height: 100px;
+  
+  }
+
+
+
+  
 }
