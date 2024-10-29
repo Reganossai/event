@@ -8,10 +8,24 @@ body {
   width: 100%;
 }
 
+.sec{
+  text-align: left;
+}
+
+.form-one{
+  margin: 30px 20px 20px 80px;
+}
+
+.form-one input[type=text]{
+  width: 85%; 
+}
+
 
 nav {
   display: flex;
-  background-color: lightgoldenrodyellow;
+  background-color: black;
+  height: 60px;
+ 
 
 }
 
@@ -37,7 +51,7 @@ nav {
 
 #navbarSupportedContent li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: cursive;
   font-weight: 600;
   padding: 0px 0px 5px 0px;

@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <li>
           <NavLink activeclassname="active" to="/meat">
-            MEAT
+            BROWSE SPACES
           </NavLink>
         </li>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
 
             <li>
               <Link to="/meat">
-              <FontAwesomeIcon icon={faChartSimple}  className="font"/> MEAT
+              <FontAwesomeIcon icon={faChartSimple}  className="font"/> BROWSE SPACES
               </Link>
             </li>
 
