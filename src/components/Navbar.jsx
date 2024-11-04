@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../assets/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faBars, faChartSimple, faCircleInfo, faClockRotateLeft, faFutbol, faSuitcase } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -18,17 +19,12 @@ const Navbar = () => {
     : (document.body.style.overflow = "auto");
   return (
     <nav className="navbar-container">
-      <Link to="/"> <img src="kfkfk.jpg" className="logo" alt="logo"/></Link>
+      <Link to="/"> <img src={logo} className="logo" alt="logo"/></Link>
        
       <ul id="navbarSupportedContent">
-        <li>
-          <NavLink activeclassname="active" to="/about">
-            ABOUT
-          </NavLink>
-        </li>
 
         <li>
-          <NavLink activeclassname="active" to="/meat">
+          <NavLink activeclassname="active" to="/">
             BROWSE SPACES
           </NavLink>
         </li>
@@ -57,18 +53,18 @@ const Navbar = () => {
           <ul id="navbarSupportedContentMobile">
             <li>
               <Link  to="/">
-                <img src="fkf.jpg" className="logo" alt="logo" />
+                <img src={logo} className="logo" alt="logo" />
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link to="/about">
               <FontAwesomeIcon icon={faCircleInfo} />  ABOUT
               </Link>
-            </li>
+            </li> */}
 
             <li>
-              <Link to="/meat">
+              <Link to="/">
               <FontAwesomeIcon icon={faChartSimple}  className="font"/> BROWSE SPACES
               </Link>
             </li>

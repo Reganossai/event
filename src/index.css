@@ -24,14 +24,14 @@ body {
 nav {
   display: flex;
   background-color: black;
-  height: 60px;
+  height: 70px;
  
 
 }
 
 .logo {
   margin: 5px 350px 5px 150px;
-  height: 60px;
+  height: 55px;
   width: 60px;
   border-radius: 100px;
 }
@@ -78,6 +78,130 @@ nav {
 }
 
 
+/* FOOTER */
+
+.brasil {
+  position: absolute;
+  left: 0;
+  top: 1700px;
+  width: 280px;
+}
+
+
+.first-conti {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  padding: 20px 10px 10px 10px;
+  margin: 100px 0px 0px 0px;
+  font-family: sans-serif;
+  background-color: black;
+
+}
+
+.ig {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 10px;
+
+}
+
+.whatsapp {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 10px;
+
+}
+
+.linkedin {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 10px;
+}
+
+.ig-div {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 0px 20px;
+}
+
+.ig-div h5 {
+  font-size: 10px;
+}
+
+
+.whatsapp-div h5 {
+  font-size: 10px;
+}
+
+.linkedin-div h5 {
+  font-size: 10px;
+}
+
+.cop{
+  margin: 20px 0px 0px 20px;
+  font-size: 10px;
+  color: white;
+}
+
+.copp{
+  margin: 10px 0px 0px 3px;
+  font-size: 10px;
+  color: white;
+}
+
+.whatsapp-div {
+  margin: 10px 10px 0px 0px;
+  width: 80px;
+
+}
+
+.linkedin-div {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 800px 0px 0px;
+  width: 80px;
+
+}
+
+
+.hell {
+  text-align: center;
+  width: 350px;
+  margin: 5px 0px;
+}
+
+.hell img {
+  width: 70px;
+  border-radius: 10px;
+  margin: 80px 0px 0px 20px;
+}
+
+.kirk {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 0px 0px;
+}
+
+
+.linkss {
+  text-align: center;
+}
+
+.linkss h6 {
+  margin-top: 20px;
+}
+
+.lim {
+  display: none;
+}
+
+
+
+
+
+
 /* Styles for tablet devices */
 @media (max-width: 1100px) {
 
@@ -88,7 +212,7 @@ nav {
     font-weight: 900;
     z-index: 999;
     margin: 10px 0px 0px 220px;
-    color: black;
+    color: white;
   }
 
   #navbarSupportedContent {
@@ -134,7 +258,7 @@ nav {
     font-weight: 900;
     z-index: 999;
     margin: 10px 0px 0px 220px;
-    color: black;
+    color: white;
   }
 
   #navbarSupportedContent {
@@ -150,7 +274,7 @@ nav {
     z-index: 999;
     width: 100%;
     height: 100vh;
-    background-color: lightgoldenrodyellow;
+    background-color: black
   }
 
   #navbarSupportedContentMobile li {
@@ -160,7 +284,7 @@ nav {
 
   #navbarSupportedContentMobile li a {
     text-decoration: none;
-    color:  red;
+    color:  white;
   }
 
   .logo {

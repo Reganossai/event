@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import first from "../assets/first.jpg";
-import second from "../assets/second.jpg";
-import third from "../assets/third.jpg";
-import fourth from "../assets/fourth.jpg";
-import fifth from "../assets/fifth.jpg";
-import { Link } from "react-router-dom";
+import first from "../assets/flo1.jpg";
+import second from "../assets/flo2.jpg";
+import third from "../assets/flo3.jpg";
+import fourth from "../assets/flo4.jpg";
+import fifth from "../assets/flo5.jpg";
+import sixth from "../assets/flo6.jpg";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const First = () => {
     
@@ -19,7 +20,16 @@ const First = () => {
       <div className="flex-div">
         <div className="card" style={{ width: "18rem", height: "230px" }}>
           <img
-            src="https://img.peerspace.com/image/upload/w_1200,c_limit/c_crop,g_custom,f_auto,q_auto,dpr_auto/l_PS-logo,g_south_east,x_20,y_20,w_175,o_75/tvazxe3ucvpsiyoh4cts"
+            src={first}
+            className="card-img-top"
+            alt="..."
+            style={{ height: "230px" }}
+          />
+        </div>
+
+        <div className="card" style={{ width: "18rem", height: "230px" }}>
+          <img
+            src={second}
             className="card-img-top"
             alt="..."
             style={{ height: "230px" }}
@@ -35,18 +45,9 @@ const First = () => {
           />
         </div>
 
-        <div className="card" style={{ width: "18rem", height: "230px" }}>
-          <img
-            src={fifth}
-            className="card-img-top"
-            alt="..."
-            style={{ height: "230px" }}
-          />
-        </div>
-
-        {/* <div className="card" style={{ width: "18rem", height:"230px" }}>
+        <div className="card" style={{ width: "18rem", height:"230px" }}>
         <img
-          src={first}
+          src={fourth}
           className="card-img-top"
           alt="..."
           style={{ height:"230px" }}
@@ -56,7 +57,7 @@ const First = () => {
 
       <div className="card" style={{ width: "18rem", height:"230px" }}>
         <img
-          src={first}
+          src={fifth}
           className="card-img-top"
           alt="..."
           style={{ height:"230px" }}
@@ -66,16 +67,67 @@ const First = () => {
 
       <div className="card" style={{ width: "18rem", height:"230px" }}>
         <img
-          src={first}
+          src={sixth}
           className="card-img-top"
           alt="..."
           style={{ height:"230px" }}
         />
-      </div> */}
+      </div>
       </div>
 
       <form className="form-one">
+        <b>Check Price and Availability</b>
         <div>
+
+          <div class="mb-3">
+            <label for="FirstName" className="form-label">
+              First Name
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputFirstName"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="LastName" className="form-label">
+              Last Name
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputLastName"
+            />
+          </div>
+
+          <div className="mb-3">
+            <label for="exampleInputEmail1" className="form-label">
+              Email address
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" className="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="PhoneNumber" className="form-label">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              class="form-control"
+              id="exampleInputPhoneNumber"
+            />
+          </div>
+
           <label>Select a Date:</label>
           <DatePicker
             selected={selectedDate}
@@ -87,9 +139,11 @@ const First = () => {
         </div>
 
         <button type="submit" className="btn btn-primary">
-          Book
+          Submit
         </button>
       </form>
+
+      <Footer/>
     </div>
   );
 };

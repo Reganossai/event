@@ -1,18 +1,32 @@
-import React, { useState } from "react";
-import second from "../assets/second.jpg";
-import third from "../assets/third.jpg";
-import fifth from "../assets/fifth.jpg";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import React, { useState } from 'react';
+import first from "../assets/fams1.jpg";
+import second from "../assets/fams2.jpg";
+import third from "../assets/fams3.jpg";
+import fourth from "../assets/fams4.jpg";
+import fifth from "../assets/fams5.jpg";
+import sixth from "../assets/fams6.jpg";
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
-const Second = () => {
+const Third = () => {
+    
   const [selectedDate, setSelectedDate] = useState(null);
   return (
     <div className="sec">
-      <Navbar />
+
+    <Navbar/>
       <div className="flex-div">
+        <div className="card" style={{ width: "18rem", height: "230px" }}>
+          <img
+            src={first}
+            className="card-img-top"
+            alt="..."
+            style={{ height: "230px" }}
+          />
+        </div>
+
         <div className="card" style={{ width: "18rem", height: "230px" }}>
           <img
             src={second}
@@ -31,18 +45,9 @@ const Second = () => {
           />
         </div>
 
-        <div className="card" style={{ width: "18rem", height: "230px" }}>
-          <img
-            src={fifth}
-            className="card-img-top"
-            alt="..."
-            style={{ height: "230px" }}
-          />
-        </div>
-
-        {/* <div className="card" style={{ width: "18rem", height:"230px" }}>
+        <div className="card" style={{ width: "18rem", height:"230px" }}>
         <img
-          src={first}
+          src={fourth}
           className="card-img-top"
           alt="..."
           style={{ height:"230px" }}
@@ -52,7 +57,7 @@ const Second = () => {
 
       <div className="card" style={{ width: "18rem", height:"230px" }}>
         <img
-          src={first}
+          src={fifth}
           className="card-img-top"
           alt="..."
           style={{ height:"230px" }}
@@ -62,12 +67,12 @@ const Second = () => {
 
       <div className="card" style={{ width: "18rem", height:"230px" }}>
         <img
-          src={first}
+          src={sixth}
           className="card-img-top"
           alt="..."
           style={{ height:"230px" }}
         />
-      </div> */}
+      </div>
       </div>
 
       <form className="form-one">
@@ -142,4 +147,4 @@ const Second = () => {
   );
 };
 
-export default Second;
+export default Third;
