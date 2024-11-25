@@ -137,6 +137,7 @@ const Second = () => {
           Submit
         </button>
       </form>
+      <p className="lapa">Call +1(888)377-7633 for Price and Availability</p>
       <Footer/>
     </div>
   );

@@ -199,6 +199,21 @@ nav {
 
 
 
+.lop{
+  height: 100vh;
+}
+
+.lop p{
+  margin: 30px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: bolder
+}
+
+.lapa{
+  margin: 30px 0px 0px 80px;
+  font-size: 20px;
+  font-weight: bolder;
+}
 
 
 
@@ -286,6 +301,7 @@ nav {
     text-decoration: none;
     color:  white;
   }
+
 
   .logo {
     margin: 5px 0px 5px 60px;

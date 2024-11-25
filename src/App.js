@@ -6,6 +6,7 @@ import First from "./components/First";
 import Third from "./components/Third";
 import Fourth from "./components/Fourth";
 import Fifth from "./components/Fifth";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
      <Route exact path="/third" element={<Third/>} />
      <Route exact path="/fourth" element={<Fourth/>} />
      <Route exact path="/fifth" element={<Fifth/>} />
+     <Route exact path="/contact" element={<Contact/>} />
      </Routes>
      </BrowserRouter>
     </div>
